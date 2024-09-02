@@ -13,6 +13,7 @@ const bodyParser = require('body-parser')
 
 const indexRouter = require('./routes/index')// index from the routes folder
 const authorRouter = require('./routes/authors')
+const bookRouter = require('./routes/books')
 
 
 //set view engine 
@@ -35,6 +36,7 @@ db.once('open', () => console.log('connected to mongoose')
 //usage of all routes
 app.use('/', indexRouter)
 app.use('/authors', authorRouter)
+app.use('/books', bookRouter)
 
 
 

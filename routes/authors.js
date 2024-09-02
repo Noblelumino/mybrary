@@ -29,7 +29,7 @@ router.get('/new',(req, res) =>{
 
 // create new author routes
 router.post('/', async (req, res) => {
-    const author = new      Author({
+    const author = new Author({
       name: req.body.name
     });
   
